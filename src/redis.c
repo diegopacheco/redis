@@ -52,6 +52,7 @@
 #include <sys/resource.h>
 #include <sys/utsname.h>
 #include <locale.h>
+#include "asciilogo.h"
 
 /* Our shared "common" objects */
 
