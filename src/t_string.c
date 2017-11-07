@@ -416,6 +416,15 @@ void incrbyfloatCommand(redisClient *c) {
     rewriteClientCommandArgument(c,2,new);
 }
 
+void diegoCommand(redisClient *c) {
+	robj *o;
+
+	printf("Running Diego Command - Redis Hicjaked! ");
+	o = createStringObject("Pacheco",7);
+
+	addReplyBulk(c,o);
+}
+
 void appendCommand(redisClient *c) {
     size_t totlen;
     robj *o, *append;
